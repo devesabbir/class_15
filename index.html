@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class</title>
+     <link rel="stylesheet" href="./font/transfonter.org-20220128-215106/stylesheet.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <section class="tabsection">
+            <div class="mid">
+                  <div class="button_part">
+                        <button class="link active" >Analog Clock</button>
+                        <button class="link" >Calculator</button>
+                        <button class="link" >Instant ValueGet</button>
+                        <button class="link" >Four</button>
+                  </div>
+                  <div class="tabcontent">
+                       <div id="one"   class="tab">
+                           
+                           <div class="analog-clock">
+                                <div class="clock-wrapper">
+                                     <div class="hr"></div>
+                                     <div class="min"></div>
+                                     <div class="sec"></div>
+                                </div>
+                           </div>
+
+                       </div>
+                       <div id="two"   class="tab">
+
+                              <div class="calwrapper">
+                                   <div class="monitor">
+                                        <div class="top"></div>
+                                        <div class="bottom"></div>
+                                   </div>
+                                   <div class="keys">
+                                        <span onclick="valget('+')">+</span>
+                                        <span onclick="valget('-')">-</span>
+                                        <span onclick="valget('*')">*</span>
+                                        <span onclick="valget('/')">/</span>
+                                        <span onclick="valget(7)">7</span>
+                                        <span onclick="valget(8)">8</span>
+                                        <span onclick="valget(9)">9</span>
+                                        <span onclick="equaSet()">=</span>
+                                        <span onclick="valget(4)">4</span>
+                                        <span onclick="valget(5)">5</span>
+                                        <span onclick="valget(6)">6</span>
+                                        <span onclick="valget(1)">1</span>
+                                        <span onclick="valget(2)">2</span>
+                                        <span onclick="valget(3)">3</span>
+                                        <span onclick="valget(0)">0</span>
+                                        <span onclick="clearSingle()">C</span>
+                                        <span onclick="clearAll()">Ac</span>
+                                       
+                                   </div>
+                              </div>
+
+                       </div>
+                       <div id="three" class="tab">
+                             <div class="instantValue">
+                                   <div class="form-check mb-3 checkboxs">
+                                       <input id="" name="" type="checkbox" class="form-check-input" value="Dhaka" />
+                                       <label id="_label" class="form-check-label" for="">Dhaka</label>
+                                       <input id="" name="" type="checkbox" class="form-check-input" value="Rangpur" />
+                                       <label id="_label" class="form-check-label" for="">Rangpur</label>
+                                       <input id="" name="" type="checkbox" class="form-check-input" value="Barisal" />
+                                       <label id="_label" class="form-check-label" for="">Barisal</label>
+                                       <input id="" name="" type="checkbox" class="form-check-input" value="Dinajpur" />
+                                       <label id="_label" class="form-check-label" for="">Dinajpur</label>
+                                   </div>
+
+                                   <div class="val">
+                                       <ul class="valOut">
+                  
+                                       </ul> 
+                                   </div>
+                             </div>
+                       </div>
+                       <div id="four" class="tab">
+                            four
+                       </div>
+                  </div>
+            </div>
+     </section>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
