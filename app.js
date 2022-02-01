@@ -102,7 +102,7 @@ function equaSet(){
 }
 
 /**
- * 
+ * Calculation Clear All
  */
 function clearAll(){
     allval = [] 
@@ -111,9 +111,15 @@ function clearAll(){
 
 };
 
+/**
+ * Instant Value Get
+ */
 const inPut = document.querySelectorAll('input')
 const valOut = document.querySelector('.valOut')
 
+/** 
+ * checkbox loop
+*/
 inPut.forEach( data => {
     data.addEventListener('change',function(){
          let chk = document.querySelectorAll('input:checked')
@@ -130,5 +136,24 @@ inPut.forEach( data => {
 
          valOut.innerHTML = item;
 
+    })
+})
+
+const rad = document.querySelectorAll('input[type="radio"]')
+
+rad.forEach( d => {
+    d.addEventListener('change',function(){
+         let r = document.querySelectorAll('input[type="radio"]:checked')
+        rar = []
+        r.forEach( v => {
+            rar.push(v.value)
+        });
+        
+        let oo = ''
+        rar.map( ou => {
+            oo += `<li>${ou}</li>` 
+        })
+
+        valOut.innerHTML = oo
     })
 })

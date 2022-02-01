@@ -236,8 +236,9 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: 10px;
-  -webkit-box-shadow: inset 0px 15px 0px 1px #040000;
-          box-shadow: inset 0px 15px 0px 1px #040000;
+  -webkit-box-shadow: inset 12px 20px 0px 1px #040000;
+          box-shadow: inset 12px 20px 0px 1px #040000;
+  overflow-wrap: anywhere;
 }
 
 .tabsection .tabcontent .tab .calwrapper .monitor .top {
@@ -331,5 +332,38 @@ body {
   background-color: #ddd;
   color: orange;
   border-radius: 20px;
+}
+
+.tabsection .tabcontent .tab .instantValue {
+  max-width: 1000px;
+  margin: auto;
+  color: azure;
+  font-size: 40px;
+}
+
+.tabsection .tabcontent .tab .instantValue .checkboxs {
+  background: #e65c00;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#F9D423), to(#e65c00));
+  background: linear-gradient(to right, #F9D423, #e65c00);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 20px;
+  border-radius: 10px 10px 0 0;
+}
+
+.tabsection .tabcontent .tab .instantValue .val {
+  background: #e65c00;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#F9D423), to(#e65c00));
+  background: linear-gradient(to right, #F9D423, #e65c00);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 0 0 10px 10px;
+  padding: 20px;
+}
+
+.tabsection .tabcontent .tab .instantValue .val ul {
+  list-style: none;
 }
 /*# sourceMappingURL=style.css.map */
