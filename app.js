@@ -114,7 +114,7 @@ function clearAll(){
 /**
  * Instant Value Get
  */
-const inPut = document.querySelectorAll('input')
+const inPut = document.querySelectorAll('input[type="checkbox"]')
 const valOut = document.querySelector('.valOut')
 
 /** 
@@ -122,7 +122,7 @@ const valOut = document.querySelector('.valOut')
 */
 inPut.forEach( data => {
     data.addEventListener('change',function(){
-         let chk = document.querySelectorAll('input:checked')
+         let chk = document.querySelectorAll('input[type="checkbox"]:checked')
          let chkArr = []
          chk.forEach( d => {
             chkArr.push(d.value)  
@@ -139,8 +139,16 @@ inPut.forEach( data => {
     })
 })
 
+/**
+ * value From Radio
+ */
 const rad = document.querySelectorAll('input[type="radio"]')
+const vallOut = document.querySelector('.vllOut')
+console.log(vallOut);
 
+/** 
+ * Radio Loop
+*/
 rad.forEach( d => {
     d.addEventListener('change',function(){
          let r = document.querySelectorAll('input[type="radio"]:checked')
@@ -149,11 +157,11 @@ rad.forEach( d => {
             rar.push(v.value)
         });
         
-        let oo = ''
+        let item = ''
         rar.map( ou => {
-            oo += `<li>${ou}</li>` 
+            item += `<li>${ou}</li>` 
         })
 
-        valOut.innerHTML = oo
+        vallOut.innerHTML = item
     })
 })

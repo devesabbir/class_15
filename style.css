@@ -25,7 +25,7 @@ ul {
 button {
   position: relative;
   padding: 0.75em 2em;
-  font: 2rem "Orbitron";
+  font: 1.3rem "Orbitron";
   letter-spacing: 2px;
   color: #fff;
   text-shadow: 0 5px 20px rgba(192, 36, 0, 0.4), 0 2px 2px rgba(192, 36, 0, 0.4);
@@ -335,7 +335,7 @@ body {
 }
 
 .tabsection .tabcontent .tab .instantValue {
-  max-width: 1000px;
+  max-width: 850px;
   margin: auto;
   color: azure;
   font-size: 40px;
@@ -365,5 +365,27 @@ body {
 
 .tabsection .tabcontent .tab .instantValue .val ul {
   list-style: none;
+}
+
+.tabsection .tabcontent .tab .radd {
+  max-width: 850px;
+  margin: auto;
+  color: azure;
+  font-size: 40px;
+}
+
+.tabsection .tabcontent .tab .vall {
+  max-width: 850px;
+  margin: auto;
+  color: azure;
+  font-size: 40px;
+  background: #e65c00;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#F9D423), to(#e65c00));
+  background: linear-gradient(to right, #F9D423, #e65c00);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 0 0 10px 10px;
+  padding: 20px;
 }
 /*# sourceMappingURL=style.css.map */
